@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.xcconfig.local
+
+# Audio/transcription inputs and outputs
+*.mp3
+*.m4a
+*.wav
+*.aac
+*.flac
+*.ogg
+*.mp4
+*.mov
+transcripts/
+
+# Signing and provisioning files
+*.p12
+*.mobileprovision
+*.cer
+*.pem

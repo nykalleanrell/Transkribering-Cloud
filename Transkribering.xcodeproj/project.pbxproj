@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9240DD35A1E5E8B8E674D2F /* TranskriberingsApp.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 48AE373AE6955D74BCEB406B /* TranskriberingsApp.swift */; };
+		EAD4173F6E105BCCBA12E9AE /* AuthManager.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 781E4FD51582503294B96AE2 /* AuthManager.swift */; };
+		7B2FCEC24587506CB91412CD /* LoginView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = DA51738389EC501AA27D6022 /* LoginView.swift */; };
+		19D2F14DA8675AD0B7B4BFD7 /* ContentView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = C4E8616AA683503CA6145F23 /* ContentView.swift */; };
+		3F6A4BFA3D6B581B8EE8BE52 /* TranscriptStore.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 2DAE692B6D945E2D9AF6AB08 /* TranscriptStore.swift */; };
+		A224FB7752105083A28ABA28 /* WhisperService.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = F077F17CF467508190A86051 /* WhisperService.swift */; };
+		9A8FA4F05C9D58D5971AB085 /* ServerManager.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 3DD3545B5E2652C591EF8933 /* ServerManager.swift */; };
+		50EF60C8829154E89D39A78E /* FirstRunView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = DAE2B8BFAB73526FA0EBD9E9 /* FirstRunView.swift */; };
+		4F9A1641005C5FECB0C52394 /* NewTranscriptionView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 52E1C880B8CC51A6A249BEFA /* NewTranscriptionView.swift */; };
+		B0F319FC84005733846C9F0F /* TranscriptDetailView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = C5E94EDDD1D25A2AB3589254 /* TranscriptDetailView.swift */; };
+		AA11BB22CC33DD44EE55FF66 /* AudioPlayerModel.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF00 /* AudioPlayerModel.swift */; };
+		AA11BB22CC33DD44EE55FF77 /* AudioPlayerModel.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF00 /* AudioPlayerModel.swift */; };
+		AA11BB22CC33DD44EE55FF88 /* AudioPlayerModel.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF00 /* AudioPlayerModel.swift */; };
+		0CD0FC8E71835C68AA2FB31F /* SettingsView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = 373040C73E9A5342B52C81A4 /* SettingsView.swift */; };
+		A8DE035C192C59D7B3B126A4 /* Assets.xcassets in Resources (Local) */ = {isa = PBXBuildFile; fileRef = 574277455D54561B86A3E8E9 /* Assets.xcassets */; };
+		12CE149CDCC85FED845F10F5 /* app.py in Resources (Local) */ = {isa = PBXBuildFile; fileRef = DDBC85164F8F5224B3D61D8A /* app.py */; };
+		E43940ECE0FC539D84DF11D9 /* requirements.txt in Resources (Local) */ = {isa = PBXBuildFile; fileRef = 9883E8C09B0E56C98F7D9115 /* requirements.txt */; };
+		80A8E73FE3745D4C85C5DFB8 /* setup.sh in Resources (Local) */ = {isa = PBXBuildFile; fileRef = 9DF2E895D94457A9A8BE24FA /* setup.sh */; };
+		EF931D09D6A753AA97C5426C /* AuthManager.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = 781E4FD51582503294B96AE2 /* AuthManager.swift */; };
+		D2C22BAF561A5C3E9BB42546 /* LoginView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = DA51738389EC501AA27D6022 /* LoginView.swift */; };
+		8E52DBE1CDA05D26AF458176 /* ContentView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = C4E8616AA683503CA6145F23 /* ContentView.swift */; };
+		E2265F56B5845294A1FAAB85 /* TranscriptStore.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = 2DAE692B6D945E2D9AF6AB08 /* TranscriptStore.swift */; };
+		D7C4A04562D35C49BB0F7DAD /* TranscriptDetailView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = C5E94EDDD1D25A2AB3589254 /* TranscriptDetailView.swift */; };
+		191E2E03028D545AA5F2CA82 /* TranskriberingsApp.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = 66DFAEA294E15C75956F3A20 /* TranskriberingsApp.swift */; };
+		7A43BC1144AE58DFAAED5E68 /* WhisperService.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = 098DF968AECD5EE29282E0D5 /* WhisperService.swift */; };
+		C3E56D41683F594D8C75620A /* SettingsView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = 9E620A01E4D35D5C837B2E9A /* SettingsView.swift */; };
+		EC942C673D005E8CB93599C3 /* NewTranscriptionView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = CDD2004C4C315D0785AEBB9D /* NewTranscriptionView.swift */; };
+		AF30C6EC17CB5753ABF4E57F /* Assets.xcassets in Resources (Cloud) */ = {isa = PBXBuildFile; fileRef = 574277455D54561B86A3E8E9 /* Assets.xcassets */; };
+		24A87497368142DCA48B21B8 /* TranskriberingsApp.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = C99526095E3D4615A1716BCF /* TranskriberingsApp.swift */; };
+		B1C45300CB98407D8657098D /* WhisperService.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = 832DB8A0242944B2856ADA74 /* WhisperService.swift */; };
+		46275114021940CCAF18EE16 /* SettingsView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = DBEACCC9BA27478F9EF656AC /* SettingsView.swift */; };
+		CBFB350BF8424F12B593F93A /* NewTranscriptionView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = 3C3DA534A09944F6AC32206F /* NewTranscriptionView.swift */; };
+		FF99AA11CC22DD33EE44FF66 /* FileSplitterView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = BB99AA11CC22DD33EE44FF55 /* FileSplitterView.swift */; };
+		FF99AA11CC22DD33EE44FF77 /* FileSplitterView.swift in Sources (Cloud) */ = {isa = PBXBuildFile; fileRef = BB99AA11CC22DD33EE44FF55 /* FileSplitterView.swift */; };
+		FF99AA11CC22DD33EE44FF88 /* FileSplitterView.swift in Sources (Local) */ = {isa = PBXBuildFile; fileRef = BB99AA11CC22DD33EE44FF55 /* FileSplitterView.swift */; };
+		184A878FDC8C4DF592084317 /* AuthManager.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = 781E4FD51582503294B96AE2 /* AuthManager.swift */; };
+		8CF48E1DE47241538C9F2217 /* LoginView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = DA51738389EC501AA27D6022 /* LoginView.swift */; };
+		7CC084AFAE3147A78377ECB7 /* ContentView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = C4E8616AA683503CA6145F23 /* ContentView.swift */; };
+		19CA802429264BC9A23D84AF /* TranscriptStore.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = 2DAE692B6D945E2D9AF6AB08 /* TranscriptStore.swift */; };
+		28EF2224B82043BDABB561CE /* TranscriptDetailView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = C5E94EDDD1D25A2AB3589254 /* TranscriptDetailView.swift */; };
+		95E8990348F14D1BA7B170CA /* ServerManager.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = 3DD3545B5E2652C591EF8933 /* ServerManager.swift */; };
+		00ADE181426C468590CCD2DE /* FirstRunView.swift in Sources (PM) */ = {isa = PBXBuildFile; fileRef = DAE2B8BFAB73526FA0EBD9E9 /* FirstRunView.swift */; };
+		EF293E2680EF436DBF003228 /* Assets.xcassets in Resources (PM) */ = {isa = PBXBuildFile; fileRef = 574277455D54561B86A3E8E9 /* Assets.xcassets */; };
+		D35F3B41CEC942CE98315C5E /* app.py in Resources (PM) */ = {isa = PBXBuildFile; fileRef = DDBC85164F8F5224B3D61D8A /* app.py */; };
+		6F0799D4408D4588956EE640 /* setup.sh in Resources (PM) */ = {isa = PBXBuildFile; fileRef = 9DF2E895D94457A9A8BE24FA /* setup.sh */; };
+		EDD3BB86A3D14D03BE3CB0F8 /* requirements.txt in Resources (PM) */ = {isa = PBXBuildFile; fileRef = 9883E8C09B0E56C98F7D9115 /* requirements.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48AE373AE6955D74BCEB406B /* TranskriberingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranskriberingsApp.swift; sourceTree = "<group>"; };
+		781E4FD51582503294B96AE2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		DA51738389EC501AA27D6022 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C4E8616AA683503CA6145F23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2DAE692B6D945E2D9AF6AB08 /* TranscriptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptStore.swift; sourceTree = "<group>"; };
+		F077F17CF467508190A86051 /* WhisperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperService.swift; sourceTree = "<group>"; };
+		3DD3545B5E2652C591EF8933 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		DAE2B8BFAB73526FA0EBD9E9 /* FirstRunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRunView.swift; sourceTree = "<group>"; };
+		52E1C880B8CC51A6A249BEFA /* NewTranscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTranscriptionView.swift; sourceTree = "<group>"; };
+		C5E94EDDD1D25A2AB3589254 /* TranscriptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailView.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55FF00 /* AudioPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerModel.swift; sourceTree = "<group>"; };
+		373040C73E9A5342B52C81A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		574277455D54561B86A3E8E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDBC85164F8F5224B3D61D8A /* app.py */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.python; path = app.py; sourceTree = "<group>"; };
+		9883E8C09B0E56C98F7D9115 /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
+		9DF2E895D94457A9A8BE24FA /* setup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		673629D59F1B5DCDA7DBBC1B /* Transkribering.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Transkribering.entitlements; sourceTree = "<group>"; };
+		51308249A7C95A9BB4F4392D /* Transkribering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transkribering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66DFAEA294E15C75956F3A20 /* TranskriberingsApp.swift (cloud) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranskriberingsApp.swift; sourceTree = "<group>"; };
+		098DF968AECD5EE29282E0D5 /* WhisperService.swift (cloud) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperService.swift; sourceTree = "<group>"; };
+		9E620A01E4D35D5C837B2E9A /* SettingsView.swift (cloud) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CDD2004C4C315D0785AEBB9D /* NewTranscriptionView.swift (cloud) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTranscriptionView.swift; sourceTree = "<group>"; };
+		1F1B6E7009C95126AC8B2CF1 /* TranskriberingCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranskriberingCloud.entitlements; sourceTree = "<group>"; };
+		D2DD9CF9A7965F1FAA8BE0EA /* Transkribering Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transkribering Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99526095E3D4615A1716BCF /* TranskriberingsApp.swift (pm) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranskriberingsApp.swift; sourceTree = "<group>"; };
+		832DB8A0242944B2856ADA74 /* WhisperService.swift (pm) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperService.swift; sourceTree = "<group>"; };
+		DBEACCC9BA27478F9EF656AC /* SettingsView.swift (pm) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3C3DA534A09944F6AC32206F /* NewTranscriptionView.swift (pm) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTranscriptionView.swift; sourceTree = "<group>"; };
+		BB99AA11CC22DD33EE44FF55 /* FileSplitterView.swift (pm) */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSplitterView.swift; sourceTree = "<group>"; };
+		F8BABC4AA3664A6C8945A647 /* TranskriberingPM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranskriberingPM.entitlements; sourceTree = "<group>"; };
+		FA668BCD5AC5491F85A3ED73 /* Transkribering PM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transkribering PM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44A80592E9195FCF96E90E76 /* Frameworks (Local) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A351E55812CC5281A050299D /* Frameworks (Cloud) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2C41857C550420F8B2A31F4 /* Frameworks (PM) */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		681696E259225E23892E5525 /* Transkribering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048800321CC35037A274F96C;
+			buildPhases = (
+				5AC485CB766C5FAE87D243F1 /* Sources */,
+				44A80592E9195FCF96E90E76 /* Frameworks */,
+				ED96EE7E24A9579BA29BF9F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Transkribering;
+			productName = Transkribering;
+			productReference = 51308249A7C95A9BB4F4392D;
+			productType = "com.apple.product-type.application";
+		};
+		9A7E06D498825F0ABF0BBFEF /* "Transkribering Cloud" */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C390461BA6075898821A1A71;
+			buildPhases = (
+				A79F792B801E5144907F7556 /* Sources */,
+				A351E55812CC5281A050299D /* Frameworks */,
+				5C3F6DF2087B505999424290 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transkribering Cloud";
+			productName = "Transkribering Cloud";
+			productReference = D2DD9CF9A7965F1FAA8BE0EA;
+			productType = "com.apple.product-type.application";
+		};
+		F937CE57D66C4D0CB3BECB5D /* "Transkribering PM" */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2770A6111E7471DA0E91C31;
+			buildPhases = (
+				2D90C76E319547AE8E71724B /* Sources */,
+				B2C41857C550420F8B2A31F4 /* Frameworks */,
+				A893124C6D394A05BC89808B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transkribering PM";
+			productName = "Transkribering PM";
+			productReference = FA668BCD5AC5491F85A3ED73;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED96EE7E24A9579BA29BF9F1 /* Resources (Local) */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8DE035C192C59D7B3B126A4 /* Assets.xcassets in Resources */,
+				12CE149CDCC85FED845F10F5 /* app.py in Resources */,
+				E43940ECE0FC539D84DF11D9 /* requirements.txt in Resources */,
+				80A8E73FE3745D4C85C5DFB8 /* setup.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C3F6DF2087B505999424290 /* Resources (Cloud) */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF30C6EC17CB5753ABF4E57F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A893124C6D394A05BC89808B /* Resources (PM) */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF293E2680EF436DBF003228 /* Assets.xcassets in Resources */,
+				D35F3B41CEC942CE98315C5E /* app.py in Resources */,
+				6F0799D4408D4588956EE640 /* setup.sh in Resources */,
+				EDD3BB86A3D14D03BE3CB0F8 /* requirements.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AC485CB766C5FAE87D243F1 /* Sources (Local) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9240DD35A1E5E8B8E674D2F /* TranskriberingsApp.swift in Sources */,
+				EAD4173F6E105BCCBA12E9AE /* AuthManager.swift in Sources */,
+				7B2FCEC24587506CB91412CD /* LoginView.swift in Sources */,
+				19D2F14DA8675AD0B7B4BFD7 /* ContentView.swift in Sources */,
+				3F6A4BFA3D6B581B8EE8BE52 /* TranscriptStore.swift in Sources */,
+				A224FB7752105083A28ABA28 /* WhisperService.swift in Sources */,
+				9A8FA4F05C9D58D5971AB085 /* ServerManager.swift in Sources */,
+				50EF60C8829154E89D39A78E /* FirstRunView.swift in Sources */,
+				4F9A1641005C5FECB0C52394 /* NewTranscriptionView.swift in Sources */,
+				B0F319FC84005733846C9F0F /* TranscriptDetailView.swift in Sources */,
+				AA11BB22CC33DD44EE55FF66 /* AudioPlayerModel.swift in Sources */,
+				0CD0FC8E71835C68AA2FB31F /* SettingsView.swift in Sources */,
+				FF99AA11CC22DD33EE44FF88 /* FileSplitterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79F792B801E5144907F7556 /* Sources (Cloud) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF931D09D6A753AA97C5426C /* AuthManager.swift in Sources */,
+				D2C22BAF561A5C3E9BB42546 /* LoginView.swift in Sources */,
+				8E52DBE1CDA05D26AF458176 /* ContentView.swift in Sources */,
+				E2265F56B5845294A1FAAB85 /* TranscriptStore.swift in Sources */,
+				D7C4A04562D35C49BB0F7DAD /* TranscriptDetailView.swift in Sources */,
+				AA11BB22CC33DD44EE55FF77 /* AudioPlayerModel.swift in Sources */,
+				191E2E03028D545AA5F2CA82 /* TranskriberingsApp.swift in Sources */,
+				7A43BC1144AE58DFAAED5E68 /* WhisperService.swift in Sources */,
+				C3E56D41683F594D8C75620A /* SettingsView.swift in Sources */,
+				EC942C673D005E8CB93599C3 /* NewTranscriptionView.swift in Sources */,
+				FF99AA11CC22DD33EE44FF77 /* FileSplitterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D90C76E319547AE8E71724B /* Sources (PM) */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A87497368142DCA48B21B8 /* TranskriberingsApp.swift in Sources */,
+				184A878FDC8C4DF592084317 /* AuthManager.swift in Sources */,
+				8CF48E1DE47241538C9F2217 /* LoginView.swift in Sources */,
+				7CC084AFAE3147A78377ECB7 /* ContentView.swift in Sources */,
+				19CA802429264BC9A23D84AF /* TranscriptStore.swift in Sources */,
+				28EF2224B82043BDABB561CE /* TranscriptDetailView.swift in Sources */,
+				AA11BB22CC33DD44EE55FF88 /* AudioPlayerModel.swift in Sources */,
+				95E8990348F14D1BA7B170CA /* ServerManager.swift in Sources */,
+				00ADE181426C468590CCD2DE /* FirstRunView.swift in Sources */,
+				B1C45300CB98407D8657098D /* WhisperService.swift in Sources */,
+				CBFB350BF8424F12B593F93A /* NewTranscriptionView.swift in Sources */,
+				46275114021940CCAF18EE16 /* SettingsView.swift in Sources */,
+				FF99AA11CC22DD33EE44FF66 /* FileSplitterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B9BA62B55505EA2B1B327E2 = {
+			isa = PBXGroup;
+			children = (
+				8E76166F871652A1882D46D2 /* Transkribering */,
+				2E68EAE37DEB51F5B812D17A /* TranskriberingCloud */,
+				57F30367CA9F4ACCA67B7480 /* TranskriberingPM */,
+				E5C525A0C8945AFF9EC9D3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5C525A0C8945AFF9EC9D3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51308249A7C95A9BB4F4392D /* Transkribering.app */,
+				D2DD9CF9A7965F1FAA8BE0EA /* Transkribering Cloud.app */,
+				FA668BCD5AC5491F85A3ED73 /* Transkribering PM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F30367CA9F4ACCA67B7480 /* TranskriberingPM */ = {
+			isa = PBXGroup;
+			children = (
+				C99526095E3D4615A1716BCF /* TranskriberingsApp.swift */,
+				832DB8A0242944B2856ADA74 /* WhisperService.swift */,
+				DBEACCC9BA27478F9EF656AC /* SettingsView.swift */,
+				3C3DA534A09944F6AC32206F /* NewTranscriptionView.swift */,
+				BB99AA11CC22DD33EE44FF55 /* FileSplitterView.swift */,
+				F8BABC4AA3664A6C8945A647 /* TranskriberingPM.entitlements */,
+			);
+			path = TranskriberingPM;
+			sourceTree = "<group>";
+		};
+		8E76166F871652A1882D46D2 /* Transkribering */ = {
+			isa = PBXGroup;
+			children = (
+				48AE373AE6955D74BCEB406B /* TranskriberingsApp.swift */,
+				781E4FD51582503294B96AE2 /* AuthManager.swift */,
+				DA51738389EC501AA27D6022 /* LoginView.swift */,
+				C4E8616AA683503CA6145F23 /* ContentView.swift */,
+				2DAE692B6D945E2D9AF6AB08 /* TranscriptStore.swift */,
+				F077F17CF467508190A86051 /* WhisperService.swift */,
+				3DD3545B5E2652C591EF8933 /* ServerManager.swift */,
+				DAE2B8BFAB73526FA0EBD9E9 /* FirstRunView.swift */,
+				52E1C880B8CC51A6A249BEFA /* NewTranscriptionView.swift */,
+				C5E94EDDD1D25A2AB3589254 /* TranscriptDetailView.swift */,
+				AA11BB22CC33DD44EE55FF00 /* AudioPlayerModel.swift */,
+				373040C73E9A5342B52C81A4 /* SettingsView.swift */,
+				574277455D54561B86A3E8E9 /* Assets.xcassets */,
+				DDBC85164F8F5224B3D61D8A /* app.py */,
+				9883E8C09B0E56C98F7D9115 /* requirements.txt */,
+				9DF2E895D94457A9A8BE24FA /* setup.sh */,
+				673629D59F1B5DCDA7DBBC1B /* Transkribering.entitlements */,
+			);
+			path = Transkribering;
+			sourceTree = "<group>";
+		};
+		2E68EAE37DEB51F5B812D17A /* TranskriberingCloud */ = {
+			isa = PBXGroup;
+			children = (
+				66DFAEA294E15C75956F3A20 /* TranskriberingsApp.swift */,
+				098DF968AECD5EE29282E0D5 /* WhisperService.swift */,
+				9E620A01E4D35D5C837B2E9A /* SettingsView.swift */,
+				CDD2004C4C315D0785AEBB9D /* NewTranscriptionView.swift */,
+				9B354827A25C5B4AA13DE815 /* Assets.xcassets */,
+				1F1B6E7009C95126AC8B2CF1 /* TranskriberingCloud.entitlements */,
+			);
+			path = TranskriberingCloud;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		51177B2BC5AB59EEBE20CD24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					681696E259225E23892E5525 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					9A7E06D498825F0ABF0BBFEF = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = CE3521018A1F562680934FC5;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B9BA62B55505EA2B1B327E2;
+			productRefGroup = E5C525A0C8945AFF9EC9D3BB;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				681696E259225E23892E5525 /* Transkribering */,
+				9A7E06D498825F0ABF0BBFEF /* Transkribering Cloud */,
+				F937CE57D66C4D0CB3BECB5D /* Transkribering PM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		CC0D90B0EA5F5273A5247796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6AC5AAD1DD1526983E1C6CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7F04AB09FE55FB991E2FFD5 /* Debug (Local Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_IDENTIFIER = se.dinredaktion.Transkribering;
+				CODE_SIGN_ENTITLEMENTS = Transkribering/Transkribering.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.Transkribering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6ED4716EB6AC5256AF15052A /* Release (Local Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_IDENTIFIER = se.dinredaktion.Transkribering;
+				CODE_SIGN_ENTITLEMENTS = Transkribering/Transkribering.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.Transkribering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5BFCAB772AC159CEA9D22272 /* Debug (Cloud Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Cloud";
+				BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingCloud;
+				CODE_SIGN_ENTITLEMENTS = TranskriberingCloud/TranskriberingCloud.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingCloud;
+				PRODUCT_NAME = "Transkribering Cloud";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C53B68991E81528A94B1043F /* Release (Cloud Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Cloud";
+				BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingCloud;
+				CODE_SIGN_ENTITLEMENTS = TranskriberingCloud/TranskriberingCloud.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingCloud;
+				PRODUCT_NAME = "Transkribering Cloud";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A42803B517F74614865FFBD7 /* Debug (PM Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PM";
+				BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingPM;
+				CODE_SIGN_ENTITLEMENTS = TranskriberingPM/TranskriberingPM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingPM;
+				PRODUCT_NAME = "Transkribering PM";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2D1A37973854B9781F5AA5D /* Release (PM Target) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-PM";
+				BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingPM;
+				CODE_SIGN_ENTITLEMENTS = TranskriberingPM/TranskriberingPM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Transkribering/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = se.dinredaktion.TranskriberingPM;
+				PRODUCT_NAME = "Transkribering PM";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE3521018A1F562680934FC5 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC0D90B0EA5F5273A5247796 /* Debug */,
+				F6AC5AAD1DD1526983E1C6CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048800321CC35037A274F96C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7F04AB09FE55FB991E2FFD5 /* Debug */,
+				6ED4716EB6AC5256AF15052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C390461BA6075898821A1A71 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFCAB772AC159CEA9D22272 /* Debug */,
+				C53B68991E81528A94B1043F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2770A6111E7471DA0E91C31 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42803B517F74614865FFBD7 /* Debug */,
+				E2D1A37973854B9781F5AA5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51177B2BC5AB59EEBE20CD24 /* Project object */;
+}
